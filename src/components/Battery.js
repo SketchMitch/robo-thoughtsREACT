@@ -1,11 +1,15 @@
 import React, { useState } from 'react';
 import {BatteryUnknown, BatteryFull, Battery80, Battery50, Battery20} from '@material-ui/icons';
+import {Chip} from '@material-ui/core'
 
-const Battery = () => {
-  // Declare a new state variable, which we'll call "count"
-  const [charge, setCharge] = useState(null);
+
+const Battery = ({ charge }) => {
+  // declare state for the charge of the battery as a number
+  const [charge, setCharge] = useState(props.charge);
+  // declare state for the Material.ui icon which matches the battery charge
   const [icon, setIcon] = useState(<BatteryUnknown />);
 
+  // array of Material.ui battery icons
   const charges = [
     {percent: 100, icon: <BatteryFull />},
     {percent: 80, icon: <Battery80 />},
@@ -33,10 +37,7 @@ const Battery = () => {
   }
 
   return (
-    <div>
-      {icon}
-      {`${charge}%`}    
-    </div>
+    <Chip icon={icon} label={`${charge}%`} />     
   )
 }
 
