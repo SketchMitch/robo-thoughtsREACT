@@ -16,6 +16,7 @@ function App() {
           <MenuIcon color='secondary'/>
     </IconButton>
     <Typography variant="h6">
+      {/* add link tag to ous uwrt */}
       robo_thoughts
     </Typography>
  
@@ -32,7 +33,7 @@ function App() {
         <Battery charge={null}/>
       </header>
     </div>
-  );
+  )
 }
 
 export default App;

@@ -25,6 +25,7 @@ const theme = createMuiTheme({
       main: red[200]
     }
   }
+  
 })
 
 console.log(theme)
