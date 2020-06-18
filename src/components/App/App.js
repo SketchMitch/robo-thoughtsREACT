@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import { AppBar, Toolbar, IconButton, Typography } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
+import Battery from '../Battery'
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
         <IconButton edge="start" aria-label="menu">
           <MenuIcon color='secondary'/>
     </IconButton>
-    <Typography variant="h5">
+    <Typography variant="h6">
       robo_thoughts
     </Typography>
  
@@ -25,14 +26,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Battery/>
       </header>
     </div>
   );
