@@ -10,11 +10,11 @@ function App() {
       <header className="App-header">
 
       <AppBar position="fixed">
-        <Toolbar>
-        <IconButton edge="start" color="inherit" aria-label="menu">
-          <MenuIcon />
+        <Toolbar color='primary'>
+        <IconButton edge="start" aria-label="menu">
+          <MenuIcon color='secondary'/>
     </IconButton>
-    <Typography variant="h6">
+    <Typography variant="h5">
       robo_thoughts
     </Typography>
  
