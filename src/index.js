@@ -4,7 +4,7 @@ import './index.css';
 import App from './components/App/App';
 import * as serviceWorker from './serviceWorker';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core'
-import {red, blue} from '@material-ui/core/colors'
+import {red, blue, green} from '@material-ui/core/colors'
 import 'fontsource-roboto';
 
 
@@ -17,10 +17,17 @@ const theme = createMuiTheme({
     secondary: {
       main: blue[500]
     },
+    action: {
+      main: green[500]
+
+    },
+    error: {
+      main: red[200]
+    }
   }
 })
 
-// console.log(theme)
+console.log(theme)
 
 ReactDOM.render(
   <React.StrictMode>
