@@ -26,7 +26,10 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <Battery/>
+        <Battery charge={10}/>
+        <Battery charge={1}/>
+        <Battery charge={100}/>
+        <Battery charge={31}/>
       </header>
     </div>
   );
